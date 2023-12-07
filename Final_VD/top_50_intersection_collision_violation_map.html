@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5c97995c0a7cec311e7f51203d86dc19 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    <h3 align="center" style="font-size:16px"><b>Top 50 Intersections for Collisions (with Traffic Violation)</b></h3>
+    
+            <div class="folium-map" id="map_5c97995c0a7cec311e7f51203d86dc19" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5c97995c0a7cec311e7f51203d86dc19 = L.map(
+                "map_5c97995c0a7cec311e7f51203d86dc19",
+                {
+                    center: [33.4004112318, -111.93390065400001],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e40bae692de719849da8b2facf4d9cc1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_e40bae692de719849da8b2facf4d9cc1.addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+    
+            var marker_437398a8a5964d1add13e32a5c5787cb = L.marker(
+                [33.41748, -111.90911],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_dfa4bfb5f074bb2987fccfce4d8317a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_437398a8a5964d1add13e32a5c5787cb.setIcon(icon_dfa4bfb5f074bb2987fccfce4d8317a9);
+        
+    
+        var popup_436efdc13cb88bcd4beff847a93b048e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_016b59e63531a59a3e8f8d96d4a8c090 = $(`<div id="html_016b59e63531a59a3e8f8d96d4a8c090" style="width: 100.0%; height: 100.0%;">McClintock Dr / Don Carlos Ave - Violation: Failed To Yield Right Of Way - 22 accidents</div>`)[0];
+                popup_436efdc13cb88bcd4beff847a93b048e.setContent(html_016b59e63531a59a3e8f8d96d4a8c090);
+            
+        
+
+        marker_437398a8a5964d1add13e32a5c5787cb.bindPopup(popup_436efdc13cb88bcd4beff847a93b048e)
+        ;
+
+        
+    
+    
+            var marker_c4175b39d2c55eaf8a8e1ff6ab89d85c = L.marker(
+                [33.43662, -111.90962],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_c9df72fa5439914565b642d42b559db7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c4175b39d2c55eaf8a8e1ff6ab89d85c.setIcon(icon_c9df72fa5439914565b642d42b559db7);
+        
+    
+        var popup_6e340da79ff3fd051be52a3ed0ba44c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bd911e0ad48a6259042f69a51550fb2 = $(`<div id="html_6bd911e0ad48a6259042f69a51550fb2" style="width: 100.0%; height: 100.0%;">McClintock Dr / SR-202 Exit 8 J-Ramp - Violation: Failed To Yield Right Of Way - 15 accidents</div>`)[0];
+                popup_6e340da79ff3fd051be52a3ed0ba44c3.setContent(html_6bd911e0ad48a6259042f69a51550fb2);
+            
+        
+
+        marker_c4175b39d2c55eaf8a8e1ff6ab89d85c.bindPopup(popup_6e340da79ff3fd051be52a3ed0ba44c3)
+        ;
+
+        
+    
+    
+            var marker_b03bddb880ba1901222a32b09dfad1f5 = L.marker(
+                [33.4075, -111.92628],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_c9bfe35d950a7bc3ab1b5fb01f1ef133 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b03bddb880ba1901222a32b09dfad1f5.setIcon(icon_c9bfe35d950a7bc3ab1b5fb01f1ef133);
+        
+    
+        var popup_3ec754bd96ff7bcc9a2650b133825618 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95a6698bbe7b32dfc40f4964aad18106 = $(`<div id="html_95a6698bbe7b32dfc40f4964aad18106" style="width: 100.0%; height: 100.0%;">Broadway Rd / Rural Rd - Violation: Failed To Yield Right Of Way - 14 accidents</div>`)[0];
+                popup_3ec754bd96ff7bcc9a2650b133825618.setContent(html_95a6698bbe7b32dfc40f4964aad18106);
+            
+        
+
+        marker_b03bddb880ba1901222a32b09dfad1f5.bindPopup(popup_3ec754bd96ff7bcc9a2650b133825618)
+        ;
+
+        
+    
+    
+            var marker_b2805aa2181006a9f1204afe04cd1bff = L.marker(
+                [33.43662129, -111.9096218],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_e76e34dde319b2ce2a11b1bf56b44f59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b2805aa2181006a9f1204afe04cd1bff.setIcon(icon_e76e34dde319b2ce2a11b1bf56b44f59);
+        
+    
+        var popup_ce81f910c3a86906dc0dd208832b9e39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3a12bb85d6f351c8dac1969fca763dd = $(`<div id="html_b3a12bb85d6f351c8dac1969fca763dd" style="width: 100.0%; height: 100.0%;">McClintock Dr / SR-202 Exit 8 J-Ramp - Violation: Failed To Yield Right Of Way - 14 accidents</div>`)[0];
+                popup_ce81f910c3a86906dc0dd208832b9e39.setContent(html_b3a12bb85d6f351c8dac1969fca763dd);
+            
+        
+
+        marker_b2805aa2181006a9f1204afe04cd1bff.bindPopup(popup_ce81f910c3a86906dc0dd208832b9e39)
+        ;
+
+        
+    
+    
+            var marker_bf6ce52f4837eea5eaf3f6cc7c76dc3c = L.marker(
+                [33.37989, -111.92842],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_a10c4975918454b589b48413dc700e97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bf6ce52f4837eea5eaf3f6cc7c76dc3c.setIcon(icon_a10c4975918454b589b48413dc700e97);
+        
+    
+        var popup_a7dbee9fb23d0371ba438f4da26599bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ccce0d0d7668d823d16cd0744bbfb79 = $(`<div id="html_7ccce0d0d7668d823d16cd0744bbfb79" style="width: 100.0%; height: 100.0%;">Rural Rd / Minton Dr - Violation: Failed To Yield Right Of Way - 13 accidents</div>`)[0];
+                popup_a7dbee9fb23d0371ba438f4da26599bd.setContent(html_7ccce0d0d7668d823d16cd0744bbfb79);
+            
+        
+
+        marker_bf6ce52f4837eea5eaf3f6cc7c76dc3c.bindPopup(popup_a7dbee9fb23d0371ba438f4da26599bd)
+        ;
+
+        
+    
+    
+            var marker_aca691d4fb684a3825fc0e4835f5c387 = L.marker(
+                [33.3492, -111.94573],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_9c4f0dabfcc6903c909f6757d8f651c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aca691d4fb684a3825fc0e4835f5c387.setIcon(icon_9c4f0dabfcc6903c909f6757d8f651c4);
+        
+    
+        var popup_8ebe42cc47218df00691417e08511426 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8da37cf3ee6e7b3cd67506fd6b682fd = $(`<div id="html_e8da37cf3ee6e7b3cd67506fd6b682fd" style="width: 100.0%; height: 100.0%;">Kyrene Rd / Elliot Rd - Violation: Failed To Yield Right Of Way - 11 accidents</div>`)[0];
+                popup_8ebe42cc47218df00691417e08511426.setContent(html_e8da37cf3ee6e7b3cd67506fd6b682fd);
+            
+        
+
+        marker_aca691d4fb684a3825fc0e4835f5c387.bindPopup(popup_8ebe42cc47218df00691417e08511426)
+        ;
+
+        
+    
+    
+            var marker_afe26268c5871d8a66a3e229cc28295b = L.marker(
+                [33.42938, -111.89183],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_a72dd784bbf69903d6abec4de4f87112 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_afe26268c5871d8a66a3e229cc28295b.setIcon(icon_a72dd784bbf69903d6abec4de4f87112);
+        
+    
+        var popup_be1eed84627888b20f7407f1edf659cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21a24d1ee6b68d817fc0a9629cafb020 = $(`<div id="html_21a24d1ee6b68d817fc0a9629cafb020" style="width: 100.0%; height: 100.0%;">Rio Salado Pkwy / Price Rd - Violation: Failed To Yield Right Of Way - 10 accidents</div>`)[0];
+                popup_be1eed84627888b20f7407f1edf659cd.setContent(html_21a24d1ee6b68d817fc0a9629cafb020);
+            
+        
+
+        marker_afe26268c5871d8a66a3e229cc28295b.bindPopup(popup_be1eed84627888b20f7407f1edf659cd)
+        ;
+
+        
+    
+    
+            var marker_0f3805803ee50817a92fc6e3ad100f40 = L.marker(
+                [33.42203, -111.92631],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_bfbd720374bb1a33a8ecece84595286e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0f3805803ee50817a92fc6e3ad100f40.setIcon(icon_bfbd720374bb1a33a8ecece84595286e);
+        
+    
+        var popup_2d6237ea3a4ac9847dbed9cf1d29a5cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_366f276869e72855acb222cd38bb05bd = $(`<div id="html_366f276869e72855acb222cd38bb05bd" style="width: 100.0%; height: 100.0%;">University Dr / Rural Rd - Violation: Failed To Yield Right Of Way - 10 accidents</div>`)[0];
+                popup_2d6237ea3a4ac9847dbed9cf1d29a5cd.setContent(html_366f276869e72855acb222cd38bb05bd);
+            
+        
+
+        marker_0f3805803ee50817a92fc6e3ad100f40.bindPopup(popup_2d6237ea3a4ac9847dbed9cf1d29a5cd)
+        ;
+
+        
+    
+    
+            var marker_d19f7ad2d7cfa2a147732f201067ce42 = L.marker(
+                [33.4385, -111.96084],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_ddd50bbb5ba39db7051e6a22398d6296 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d19f7ad2d7cfa2a147732f201067ce42.setIcon(icon_ddd50bbb5ba39db7051e6a22398d6296);
+        
+    
+        var popup_0f4b0ccdee84aa2ecd701bb785d09005 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fc23fa3004e0be2cd0b3118cb0a0cfc = $(`<div id="html_3fc23fa3004e0be2cd0b3118cb0a0cfc" style="width: 100.0%; height: 100.0%;">Priest Dr / SR-202 Exit 5 J-Ramp - Violation: Disregarded Traffic Signal - 10 accidents</div>`)[0];
+                popup_0f4b0ccdee84aa2ecd701bb785d09005.setContent(html_3fc23fa3004e0be2cd0b3118cb0a0cfc);
+            
+        
+
+        marker_d19f7ad2d7cfa2a147732f201067ce42.bindPopup(popup_0f4b0ccdee84aa2ecd701bb785d09005)
+        ;
+
+        
+    
+    
+            var marker_0bbd1281fab62367ffc5a4c9444740b9 = L.marker(
+                [33.40748, -111.89033],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_ba489f0805e26a88d77bc082c0f10733 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0bbd1281fab62367ffc5a4c9444740b9.setIcon(icon_ba489f0805e26a88d77bc082c0f10733);
+        
+    
+        var popup_a1815931d0bfeb6c55f4f9af61ed0ba2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9787118ecdaa07c5abb95e726fbc8110 = $(`<div id="html_9787118ecdaa07c5abb95e726fbc8110" style="width: 100.0%; height: 100.0%;">Price Rd / Broadway Rd - Violation: Failed To Keep In Proper Lane - 9 accidents</div>`)[0];
+                popup_a1815931d0bfeb6c55f4f9af61ed0ba2.setContent(html_9787118ecdaa07c5abb95e726fbc8110);
+            
+        
+
+        marker_0bbd1281fab62367ffc5a4c9444740b9.bindPopup(popup_a1815931d0bfeb6c55f4f9af61ed0ba2)
+        ;
+
+        
+    
+    
+            var marker_90cc49b3f5e75a23f31c3fee50e1a898 = L.marker(
+                [33.37821354, -111.9525127],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_d7aa86edb26767d672366d8bd178fc28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_90cc49b3f5e75a23f31c3fee50e1a898.setIcon(icon_d7aa86edb26767d672366d8bd178fc28);
+        
+    
+        var popup_a20ef2d0aab6647295379daa09ffb968 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4afc49871b7578ecb5d92c63aec93f44 = $(`<div id="html_4afc49871b7578ecb5d92c63aec93f44" style="width: 100.0%; height: 100.0%;">Baseline Rd / Hardy Dr - Violation: Failed To Yield Right Of Way - 9 accidents</div>`)[0];
+                popup_a20ef2d0aab6647295379daa09ffb968.setContent(html_4afc49871b7578ecb5d92c63aec93f44);
+            
+        
+
+        marker_90cc49b3f5e75a23f31c3fee50e1a898.bindPopup(popup_a20ef2d0aab6647295379daa09ffb968)
+        ;
+
+        
+    
+    
+            var marker_9d5a6b3ad0d5f66b91b37f2b0bfebd12 = L.marker(
+                [33.4075, -111.92372],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_6a525b08937ec0e8297e8c427ee6e8e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9d5a6b3ad0d5f66b91b37f2b0bfebd12.setIcon(icon_6a525b08937ec0e8297e8c427ee6e8e5);
+        
+    
+        var popup_570ee4b01780c249defb5f4f0fd50ee9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ecb6da837de1a22b89cbf443c439bdc = $(`<div id="html_6ecb6da837de1a22b89cbf443c439bdc" style="width: 100.0%; height: 100.0%;">Broadway Rd / Jentilly Ln - Violation: Failed To Yield Right Of Way - 9 accidents</div>`)[0];
+                popup_570ee4b01780c249defb5f4f0fd50ee9.setContent(html_6ecb6da837de1a22b89cbf443c439bdc);
+            
+        
+
+        marker_9d5a6b3ad0d5f66b91b37f2b0bfebd12.bindPopup(popup_570ee4b01780c249defb5f4f0fd50ee9)
+        ;
+
+        
+    
+    
+            var marker_0498312ccb7b97ce71fd7bdf033e5013 = L.marker(
+                [33.40750178, -111.9262829],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_26112c2c47558231815b90fdec84445b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0498312ccb7b97ce71fd7bdf033e5013.setIcon(icon_26112c2c47558231815b90fdec84445b);
+        
+    
+        var popup_3b9ec437a2fa9f7f260e358fce515911 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f94382165e56097c7ece4d60b8cc5055 = $(`<div id="html_f94382165e56097c7ece4d60b8cc5055" style="width: 100.0%; height: 100.0%;">Broadway Rd / Rural Rd - Violation: Failed To Yield Right Of Way - 8 accidents</div>`)[0];
+                popup_3b9ec437a2fa9f7f260e358fce515911.setContent(html_f94382165e56097c7ece4d60b8cc5055);
+            
+        
+
+        marker_0498312ccb7b97ce71fd7bdf033e5013.bindPopup(popup_3b9ec437a2fa9f7f260e358fce515911)
+        ;
+
+        
+    
+    
+            var marker_e18d2ac035517811084b16541ad4c2f9 = L.marker(
+                [33.36376447, -111.9112567],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_4acbecc239f5c8e8637b8d3cb10306b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e18d2ac035517811084b16541ad4c2f9.setIcon(icon_4acbecc239f5c8e8637b8d3cb10306b0);
+        
+    
+        var popup_cd5c62fef43b8f28faebee8906c492c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd2c2a53440c2c4b4c8096c178b38b88 = $(`<div id="html_dd2c2a53440c2c4b4c8096c178b38b88" style="width: 100.0%; height: 100.0%;">Guadalupe Rd / McClintock Dr - Violation: Failed To Yield Right Of Way - 8 accidents</div>`)[0];
+                popup_cd5c62fef43b8f28faebee8906c492c7.setContent(html_dd2c2a53440c2c4b4c8096c178b38b88);
+            
+        
+
+        marker_e18d2ac035517811084b16541ad4c2f9.bindPopup(popup_cd5c62fef43b8f28faebee8906c492c7)
+        ;
+
+        
+    
+    
+            var marker_c69697d22df08ed7a2c7b0d0ceee4ec9 = L.marker(
+                [33.41683505, -111.9262972],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_d620c440dd94201fa859982d1f348471 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c69697d22df08ed7a2c7b0d0ceee4ec9.setIcon(icon_d620c440dd94201fa859982d1f348471);
+        
+    
+        var popup_6b00f32164d5a3a83036523dd1d0aae1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ab2bafd96a6309c181873178c9eedcc = $(`<div id="html_2ab2bafd96a6309c181873178c9eedcc" style="width: 100.0%; height: 100.0%;">Rural Rd / Lemon St - Violation: Failed To Yield Right Of Way - 8 accidents</div>`)[0];
+                popup_6b00f32164d5a3a83036523dd1d0aae1.setContent(html_2ab2bafd96a6309c181873178c9eedcc);
+            
+        
+
+        marker_c69697d22df08ed7a2c7b0d0ceee4ec9.bindPopup(popup_6b00f32164d5a3a83036523dd1d0aae1)
+        ;
+
+        
+    
+    
+            var marker_bad459b967a81e7de41d2ca13922f17c = L.marker(
+                [33.3492, -111.94573],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_e9dbb5d8ca833323c011faea744fec60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bad459b967a81e7de41d2ca13922f17c.setIcon(icon_e9dbb5d8ca833323c011faea744fec60);
+        
+    
+        var popup_d5c9ffd17ffe0dc57e670462d37d3b03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a5da5ff31620da5bff5895b24e7617e = $(`<div id="html_2a5da5ff31620da5bff5895b24e7617e" style="width: 100.0%; height: 100.0%;">Elliot Rd / Kyrene Rd - Violation: Failed To Yield Right Of Way - 8 accidents</div>`)[0];
+                popup_d5c9ffd17ffe0dc57e670462d37d3b03.setContent(html_2a5da5ff31620da5bff5895b24e7617e);
+            
+        
+
+        marker_bad459b967a81e7de41d2ca13922f17c.bindPopup(popup_d5c9ffd17ffe0dc57e670462d37d3b03)
+        ;
+
+        
+    
+    
+            var marker_c6823db58c2dbb752a11b85b97807c4c = L.marker(
+                [33.42201, -111.89195],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_8b0f7e6197463752f78e524fa670aa3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c6823db58c2dbb752a11b85b97807c4c.setIcon(icon_8b0f7e6197463752f78e524fa670aa3f);
+        
+    
+        var popup_c78cd0a378128765ffb432a80b6687d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a4dd6948cfed1fec58acf6fba388e1c = $(`<div id="html_7a4dd6948cfed1fec58acf6fba388e1c" style="width: 100.0%; height: 100.0%;">University Dr / Price Rd - Violation: Disregarded Traffic Signal - 8 accidents</div>`)[0];
+                popup_c78cd0a378128765ffb432a80b6687d1.setContent(html_7a4dd6948cfed1fec58acf6fba388e1c);
+            
+        
+
+        marker_c6823db58c2dbb752a11b85b97807c4c.bindPopup(popup_c78cd0a378128765ffb432a80b6687d1)
+        ;
+
+        
+    
+    
+            var marker_aa10776a05af566806448211986e1c04 = L.marker(
+                [33.43714969, -111.9609412],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_8ff1ae26741b2cf4c5479919fa9d54b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aa10776a05af566806448211986e1c04.setIcon(icon_8ff1ae26741b2cf4c5479919fa9d54b0);
+        
+    
+        var popup_5937ded255d70796f5483fc75408e2df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7588cb3d88198c51a44252e4ee29f24 = $(`<div id="html_a7588cb3d88198c51a44252e4ee29f24" style="width: 100.0%; height: 100.0%;">Priest Dr / SR-202 Cardinal Frontage - Violation: Disregarded Traffic Signal - 8 accidents</div>`)[0];
+                popup_5937ded255d70796f5483fc75408e2df.setContent(html_a7588cb3d88198c51a44252e4ee29f24);
+            
+        
+
+        marker_aa10776a05af566806448211986e1c04.bindPopup(popup_5937ded255d70796f5483fc75408e2df)
+        ;
+
+        
+    
+    
+            var marker_f86b9c4b61614ddee4a2c457fec77662 = L.marker(
+                [33.41952, -111.9091],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_752501fd874496b78898d0b24264fc38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f86b9c4b61614ddee4a2c457fec77662.setIcon(icon_752501fd874496b78898d0b24264fc38);
+        
+    
+        var popup_3d8d5f2ada78530f7c921c2af79e9ebb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75dbf4e8e50e9a4052d8641364191cb1 = $(`<div id="html_75dbf4e8e50e9a4052d8641364191cb1" style="width: 100.0%; height: 100.0%;">McClintock Dr / 8th St - Violation: Failed To Yield Right Of Way - 7 accidents</div>`)[0];
+                popup_3d8d5f2ada78530f7c921c2af79e9ebb.setContent(html_75dbf4e8e50e9a4052d8641364191cb1);
+            
+        
+
+        marker_f86b9c4b61614ddee4a2c457fec77662.bindPopup(popup_3d8d5f2ada78530f7c921c2af79e9ebb)
+        ;
+
+        
+    
+    
+            var marker_fcb579952cc0fcdfab86a3fa66e42660 = L.marker(
+                [33.36376, -111.91126],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_d1a2d1cbaeefd0831abbb4124b04ed85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fcb579952cc0fcdfab86a3fa66e42660.setIcon(icon_d1a2d1cbaeefd0831abbb4124b04ed85);
+        
+    
+        var popup_5346f7b8b6a5462694fecec10d8ad7ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4511b32cebab01e2123b0494ee24019 = $(`<div id="html_a4511b32cebab01e2123b0494ee24019" style="width: 100.0%; height: 100.0%;">McClintock Dr / Guadalupe Rd - Violation: Failed To Yield Right Of Way - 7 accidents</div>`)[0];
+                popup_5346f7b8b6a5462694fecec10d8ad7ea.setContent(html_a4511b32cebab01e2123b0494ee24019);
+            
+        
+
+        marker_fcb579952cc0fcdfab86a3fa66e42660.bindPopup(popup_5346f7b8b6a5462694fecec10d8ad7ea)
+        ;
+
+        
+    
+    
+            var marker_8786c6cedf1a0c1ad5cce0f96cf1eb13 = L.marker(
+                [33.3783, -111.96738],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_61b82f6bdcecea715fb18d8b8d95bf75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8786c6cedf1a0c1ad5cce0f96cf1eb13.setIcon(icon_61b82f6bdcecea715fb18d8b8d95bf75);
+        
+    
+        var popup_1a01a9a30c0014eee85fc51c27b40cd9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26da9730a16b4cd5931be2b2fe1aa5e4 = $(`<div id="html_26da9730a16b4cd5931be2b2fe1aa5e4" style="width: 100.0%; height: 100.0%;">Baseline Rd / I-10 Exit 155 J1-Ramp - Violation: Disregarded Traffic Signal - 7 accidents</div>`)[0];
+                popup_1a01a9a30c0014eee85fc51c27b40cd9.setContent(html_26da9730a16b4cd5931be2b2fe1aa5e4);
+            
+        
+
+        marker_8786c6cedf1a0c1ad5cce0f96cf1eb13.bindPopup(popup_1a01a9a30c0014eee85fc51c27b40cd9)
+        ;
+
+        
+    
+    
+            var marker_32b23c4c9979fc1931a6c49e799ae1ca = L.marker(
+                [33.43715, -111.96094],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_45afffabe0bdbd683092f87f3d6d2c2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_32b23c4c9979fc1931a6c49e799ae1ca.setIcon(icon_45afffabe0bdbd683092f87f3d6d2c2a);
+        
+    
+        var popup_50f359b417069792ff091cb1a37c1b6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3037dfd346b06905e2c8c23779cf2d5e = $(`<div id="html_3037dfd346b06905e2c8c23779cf2d5e" style="width: 100.0%; height: 100.0%;">Priest Dr / SR-202 Exit 5 A-Ramp - Violation: Disregarded Traffic Signal - 7 accidents</div>`)[0];
+                popup_50f359b417069792ff091cb1a37c1b6e.setContent(html_3037dfd346b06905e2c8c23779cf2d5e);
+            
+        
+
+        marker_32b23c4c9979fc1931a6c49e799ae1ca.bindPopup(popup_50f359b417069792ff091cb1a37c1b6e)
+        ;
+
+        
+    
+    
+            var marker_3ae21fb412dfd5eb1d85b09241325f96 = L.marker(
+                [33.40739301, -111.952165],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_f4789c5594ebd10d86efda397e56a28c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3ae21fb412dfd5eb1d85b09241325f96.setIcon(icon_f4789c5594ebd10d86efda397e56a28c);
+        
+    
+        var popup_ab1dd771804048f5ec79a3f0e11f9a69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe8573a4d26b3650f4e7e825b3aedf6d = $(`<div id="html_fe8573a4d26b3650f4e7e825b3aedf6d" style="width: 100.0%; height: 100.0%;">Broadway Rd / Hardy Dr - Violation: Failed To Yield Right Of Way - 7 accidents</div>`)[0];
+                popup_ab1dd771804048f5ec79a3f0e11f9a69.setContent(html_fe8573a4d26b3650f4e7e825b3aedf6d);
+            
+        
+
+        marker_3ae21fb412dfd5eb1d85b09241325f96.bindPopup(popup_ab1dd771804048f5ec79a3f0e11f9a69)
+        ;
+
+        
+    
+    
+            var marker_36122d2e095bd406a3308db33e73c809 = L.marker(
+                [33.42202, -111.91769],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_4dd4b73fdb99c7eac0f59bdaada3cacc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_36122d2e095bd406a3308db33e73c809.setIcon(icon_4dd4b73fdb99c7eac0f59bdaada3cacc);
+        
+    
+        var popup_0bfcb2a14a5c28b0683f48fb51bcf1f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee272cb2bed85054f2d8b1ae5710a792 = $(`<div id="html_ee272cb2bed85054f2d8b1ae5710a792" style="width: 100.0%; height: 100.0%;">University Dr / Dorsey Ln - Violation: Failed To Yield Right Of Way - 7 accidents</div>`)[0];
+                popup_0bfcb2a14a5c28b0683f48fb51bcf1f7.setContent(html_ee272cb2bed85054f2d8b1ae5710a792);
+            
+        
+
+        marker_36122d2e095bd406a3308db33e73c809.bindPopup(popup_0bfcb2a14a5c28b0683f48fb51bcf1f7)
+        ;
+
+        
+    
+    
+            var marker_e210bdb3e42dea26a9135b36d7372615 = L.marker(
+                [33.36366, -111.94589],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_55c67a9a4fde44193c52602f657bdba5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e210bdb3e42dea26a9135b36d7372615.setIcon(icon_55c67a9a4fde44193c52602f657bdba5);
+        
+    
+        var popup_e7b112e8b607289dd2604dbe21f7f126 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23f5057beeba9e25549f8323816ec3ac = $(`<div id="html_23f5057beeba9e25549f8323816ec3ac" style="width: 100.0%; height: 100.0%;">Kyrene Rd / Guadalupe Rd - Violation: Failed To Yield Right Of Way - 7 accidents</div>`)[0];
+                popup_e7b112e8b607289dd2604dbe21f7f126.setContent(html_23f5057beeba9e25549f8323816ec3ac);
+            
+        
+
+        marker_e210bdb3e42dea26a9135b36d7372615.bindPopup(popup_e7b112e8b607289dd2604dbe21f7f126)
+        ;
+
+        
+    
+    
+            var marker_85c7b8cd3b94717ad719851e094feb99 = L.marker(
+                [33.39290712, -111.9349183],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_f06cfa588da2de83b2d516b837a24ce4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_85c7b8cd3b94717ad719851e094feb99.setIcon(icon_f06cfa588da2de83b2d516b837a24ce4);
+        
+    
+        var popup_b351a938e65988e81f9bddfadfa09c1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75d14ce2f0a452ff3e90aa73fedc417f = $(`<div id="html_75d14ce2f0a452ff3e90aa73fedc417f" style="width: 100.0%; height: 100.0%;">Southern Ave / College Ave - Violation: Failed To Yield Right Of Way - 6 accidents</div>`)[0];
+                popup_b351a938e65988e81f9bddfadfa09c1b.setContent(html_75d14ce2f0a452ff3e90aa73fedc417f);
+            
+        
+
+        marker_85c7b8cd3b94717ad719851e094feb99.bindPopup(popup_b351a938e65988e81f9bddfadfa09c1b)
+        ;
+
+        
+    
+    
+            var marker_c00687726232f64a0e61d0e738efa8c0 = L.marker(
+                [33.40751, -111.9177],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_33daf7b568982e3a7457f8d57af1d669 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c00687726232f64a0e61d0e738efa8c0.setIcon(icon_33daf7b568982e3a7457f8d57af1d669);
+        
+    
+        var popup_84cf9b32664f8e2ac9c06958c6e0b9f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49a413f07d0bea805cc59be7f11680ba = $(`<div id="html_49a413f07d0bea805cc59be7f11680ba" style="width: 100.0%; height: 100.0%;">Broadway Rd / Dorsey Ln - Violation: Failed To Yield Right Of Way - 6 accidents</div>`)[0];
+                popup_84cf9b32664f8e2ac9c06958c6e0b9f3.setContent(html_49a413f07d0bea805cc59be7f11680ba);
+            
+        
+
+        marker_c00687726232f64a0e61d0e738efa8c0.bindPopup(popup_84cf9b32664f8e2ac9c06958c6e0b9f3)
+        ;
+
+        
+    
+    
+            var marker_bb89bc223fbaff12733a51a243550a2f = L.marker(
+                [33.41468, -111.93496],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_410aaa550d40ad2cfa35c79986692393 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bb89bc223fbaff12733a51a243550a2f.setIcon(icon_410aaa550d40ad2cfa35c79986692393);
+        
+    
+        var popup_1d4d60604023157ac2970227dc4332fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61106a7981a5aec2a70058a01f079e6b = $(`<div id="html_61106a7981a5aec2a70058a01f079e6b" style="width: 100.0%; height: 100.0%;">Apache Blvd / College Ave - Violation: Failed To Yield Right Of Way - 6 accidents</div>`)[0];
+                popup_1d4d60604023157ac2970227dc4332fa.setContent(html_61106a7981a5aec2a70058a01f079e6b);
+            
+        
+
+        marker_bb89bc223fbaff12733a51a243550a2f.bindPopup(popup_1d4d60604023157ac2970227dc4332fa)
+        ;
+
+        
+    
+    
+            var marker_ebbf3ea996b94f8cecf31e6c339ca127 = L.marker(
+                [33.41615, -111.90912],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_dc7b8b8fe7fb08419fbf657bc7b51dff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ebbf3ea996b94f8cecf31e6c339ca127.setIcon(icon_dc7b8b8fe7fb08419fbf657bc7b51dff);
+        
+    
+        var popup_3b4f77aa50c5239509897b167f4cb0f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9c4ad4e4555ecc962282e943a81f513 = $(`<div id="html_b9c4ad4e4555ecc962282e943a81f513" style="width: 100.0%; height: 100.0%;">McClintock Dr / 12th St - Violation: Failed To Yield Right Of Way - 6 accidents</div>`)[0];
+                popup_3b4f77aa50c5239509897b167f4cb0f3.setContent(html_b9c4ad4e4555ecc962282e943a81f513);
+            
+        
+
+        marker_ebbf3ea996b94f8cecf31e6c339ca127.bindPopup(popup_3b4f77aa50c5239509897b167f4cb0f3)
+        ;
+
+        
+    
+    
+            var marker_4e2593092a35b80eab4b91fd353d5bfd = L.marker(
+                [33.37821693, -111.9438877],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_9870cc4640f353d91499a719eca03d01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4e2593092a35b80eab4b91fd353d5bfd.setIcon(icon_9870cc4640f353d91499a719eca03d01);
+        
+    
+        var popup_6b18a67c9806f1466035cb069da12410 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07b9af7940951db5648865f8e23ba0a8 = $(`<div id="html_07b9af7940951db5648865f8e23ba0a8" style="width: 100.0%; height: 100.0%;">Baseline Rd / Kyrene Rd - Violation: Failed To Yield Right Of Way - 6 accidents</div>`)[0];
+                popup_6b18a67c9806f1466035cb069da12410.setContent(html_07b9af7940951db5648865f8e23ba0a8);
+            
+        
+
+        marker_4e2593092a35b80eab4b91fd353d5bfd.bindPopup(popup_6b18a67c9806f1466035cb069da12410)
+        ;
+
+        
+    
+    
+            var marker_b18edbd3989007a38d691a960811235b = L.marker(
+                [33.42194, -111.96092],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_7a6834db2a0c2ee0c3128cd96f18f916 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b18edbd3989007a38d691a960811235b.setIcon(icon_7a6834db2a0c2ee0c3128cd96f18f916);
+        
+    
+        var popup_f8b4e8662b84438ed500f5ccf14a7a42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_838d6ac3307259ea1e0586754f71c5bf = $(`<div id="html_838d6ac3307259ea1e0586754f71c5bf" style="width: 100.0%; height: 100.0%;">University Dr / Priest Dr - Violation: Failed To Yield Right Of Way - 6 accidents</div>`)[0];
+                popup_f8b4e8662b84438ed500f5ccf14a7a42.setContent(html_838d6ac3307259ea1e0586754f71c5bf);
+            
+        
+
+        marker_b18edbd3989007a38d691a960811235b.bindPopup(popup_f8b4e8662b84438ed500f5ccf14a7a42)
+        ;
+
+        
+    
+    
+            var marker_ec49e90470f66060e43d5da636d28455 = L.marker(
+                [33.45124082, -111.9264677],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_56d33c3248071ea9675dbce7d4ba8d6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ec49e90470f66060e43d5da636d28455.setIcon(icon_56d33c3248071ea9675dbce7d4ba8d6b);
+        
+    
+        var popup_b369994c44629f860cc547ffe193236e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c65d66936b9a3b54970b0450e3c528cf = $(`<div id="html_c65d66936b9a3b54970b0450e3c528cf" style="width: 100.0%; height: 100.0%;">Scottsdale Rd / McKellips Rd - Violation: Disregarded Traffic Signal - 6 accidents</div>`)[0];
+                popup_b369994c44629f860cc547ffe193236e.setContent(html_c65d66936b9a3b54970b0450e3c528cf);
+            
+        
+
+        marker_ec49e90470f66060e43d5da636d28455.bindPopup(popup_b369994c44629f860cc547ffe193236e)
+        ;
+
+        
+    
+    
+            var marker_b61de287d4b6ab8f7c5dfc35cc2201b8 = L.marker(
+                [33.40932, -111.97822],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_93fcf01dcc992f3bbaa9ba35e4707e3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b61de287d4b6ab8f7c5dfc35cc2201b8.setIcon(icon_93fcf01dcc992f3bbaa9ba35e4707e3c);
+        
+    
+        var popup_5094c0bf86fb210dc3d0f02c883eca10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b21f88a7c20f77953c0ff96456e27fe5 = $(`<div id="html_b21f88a7c20f77953c0ff96456e27fe5" style="width: 100.0%; height: 100.0%;">48th St / I-10 Cardinal Frontage - Violation: Disregarded Traffic Signal - 6 accidents</div>`)[0];
+                popup_5094c0bf86fb210dc3d0f02c883eca10.setContent(html_b21f88a7c20f77953c0ff96456e27fe5);
+            
+        
+
+        marker_b61de287d4b6ab8f7c5dfc35cc2201b8.bindPopup(popup_5094c0bf86fb210dc3d0f02c883eca10)
+        ;
+
+        
+    
+    
+            var marker_daac5934faf816313e7bcbcf458f8e7b = L.marker(
+                [33.34919917, -111.9457347],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_0fde9fc4ac7ed752b5beffb63c88118b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_daac5934faf816313e7bcbcf458f8e7b.setIcon(icon_0fde9fc4ac7ed752b5beffb63c88118b);
+        
+    
+        var popup_8d06afc21d329a432524d9990972259b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_354c5b276334fc7c858d680ec5609a95 = $(`<div id="html_354c5b276334fc7c858d680ec5609a95" style="width: 100.0%; height: 100.0%;">Elliot Rd / Kyrene Rd - Violation: Failed To Yield Right Of Way - 6 accidents</div>`)[0];
+                popup_8d06afc21d329a432524d9990972259b.setContent(html_354c5b276334fc7c858d680ec5609a95);
+            
+        
+
+        marker_daac5934faf816313e7bcbcf458f8e7b.bindPopup(popup_8d06afc21d329a432524d9990972259b)
+        ;
+
+        
+    
+    
+            var marker_34890c5940d4858755bae8f45cac330a = L.marker(
+                [33.36376, -111.91126],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_4075bbcdedccc4bbb0b7beac03ede076 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_34890c5940d4858755bae8f45cac330a.setIcon(icon_4075bbcdedccc4bbb0b7beac03ede076);
+        
+    
+        var popup_fdfd914b46b905e048c76c40648f030b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_014b50c1dd945f5b21524f6523e73367 = $(`<div id="html_014b50c1dd945f5b21524f6523e73367" style="width: 100.0%; height: 100.0%;">Guadalupe Rd / McClintock Dr - Violation: Failed To Yield Right Of Way - 6 accidents</div>`)[0];
+                popup_fdfd914b46b905e048c76c40648f030b.setContent(html_014b50c1dd945f5b21524f6523e73367);
+            
+        
+
+        marker_34890c5940d4858755bae8f45cac330a.bindPopup(popup_fdfd914b46b905e048c76c40648f030b)
+        ;
+
+        
+    
+    
+            var marker_eb3eaf214868287c315adb2f13c48574 = L.marker(
+                [33.34907, -111.97283],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_27c38b2b8c4e1ff75b64f004ca7c92e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb3eaf214868287c315adb2f13c48574.setIcon(icon_27c38b2b8c4e1ff75b64f004ca7c92e3);
+        
+    
+        var popup_416a88cd2d5ae1ff46766259950f099d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b40467240cba098b82cb5070b6678b82 = $(`<div id="html_b40467240cba098b82cb5070b6678b82" style="width: 100.0%; height: 100.0%;">Elliot Rd / I-10 Exit 157 A-Ramp - Violation: Unknown - 6 accidents</div>`)[0];
+                popup_416a88cd2d5ae1ff46766259950f099d.setContent(html_b40467240cba098b82cb5070b6678b82);
+            
+        
+
+        marker_eb3eaf214868287c315adb2f13c48574.bindPopup(popup_416a88cd2d5ae1ff46766259950f099d)
+        ;
+
+        
+    
+    
+            var marker_442a2b7147a052bf912fb85aaa3711cf = L.marker(
+                [33.33452532, -111.9631173],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_63288aff6a35085b9e6bb2fa6045ee8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_442a2b7147a052bf912fb85aaa3711cf.setIcon(icon_63288aff6a35085b9e6bb2fa6045ee8f);
+        
+    
+        var popup_b525c71e4f32d2f37c48c4bd6782b9cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5af2ac31bc47b4541940bf7496dc76f = $(`<div id="html_d5af2ac31bc47b4541940bf7496dc76f" style="width: 100.0%; height: 100.0%;">Warner Rd / Priest Dr - Violation: Failed To Yield Right Of Way - 6 accidents</div>`)[0];
+                popup_b525c71e4f32d2f37c48c4bd6782b9cd.setContent(html_d5af2ac31bc47b4541940bf7496dc76f);
+            
+        
+
+        marker_442a2b7147a052bf912fb85aaa3711cf.bindPopup(popup_b525c71e4f32d2f37c48c4bd6782b9cd)
+        ;
+
+        
+    
+    
+            var marker_401c0a5a051ec19340f2064e6817d7cf = L.marker(
+                [33.40932389, -111.9782234],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_4afd80e12bdd5daae851c2a06ecb6b57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_401c0a5a051ec19340f2064e6817d7cf.setIcon(icon_4afd80e12bdd5daae851c2a06ecb6b57);
+        
+    
+        var popup_9b0f063a03ac0c2c0986237bcba90a3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_385ade7299b4eeb3d270f42814e27197 = $(`<div id="html_385ade7299b4eeb3d270f42814e27197" style="width: 100.0%; height: 100.0%;">48th St / I-10 Cardinal Frontage - Violation: Disregarded Traffic Signal - 6 accidents</div>`)[0];
+                popup_9b0f063a03ac0c2c0986237bcba90a3d.setContent(html_385ade7299b4eeb3d270f42814e27197);
+            
+        
+
+        marker_401c0a5a051ec19340f2064e6817d7cf.bindPopup(popup_9b0f063a03ac0c2c0986237bcba90a3d)
+        ;
+
+        
+    
+    
+            var marker_097d18080a3acf01afd7c7ed44129f65 = L.marker(
+                [33.39276725, -111.9783383],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_fbb7a153c967e54b21122bc5adc319a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_097d18080a3acf01afd7c7ed44129f65.setIcon(icon_fbb7a153c967e54b21122bc5adc319a3);
+        
+    
+        var popup_acd7267d9414d4cd430bafaf687e0328 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77ef7fc8aceced3a7cd5e24857c2f459 = $(`<div id="html_77ef7fc8aceced3a7cd5e24857c2f459" style="width: 100.0%; height: 100.0%;">Southern Ave / 48th St - Violation: Failed To Yield Right Of Way - 6 accidents</div>`)[0];
+                popup_acd7267d9414d4cd430bafaf687e0328.setContent(html_77ef7fc8aceced3a7cd5e24857c2f459);
+            
+        
+
+        marker_097d18080a3acf01afd7c7ed44129f65.bindPopup(popup_acd7267d9414d4cd430bafaf687e0328)
+        ;
+
+        
+    
+    
+            var marker_3182afe064b46fee7d353a0a5d27c3b9 = L.marker(
+                [33.43756, -111.92628],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_c894d792d4ed466ddd78305b2b261f37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3182afe064b46fee7d353a0a5d27c3b9.setIcon(icon_c894d792d4ed466ddd78305b2b261f37);
+        
+    
+        var popup_3f953b0916a9b1f5b8c29cde885bde0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff4fb58ceb840be0980a05d51adfb94c = $(`<div id="html_ff4fb58ceb840be0980a05d51adfb94c" style="width: 100.0%; height: 100.0%;">Scottsdale Rd / Gilbert Dr - Violation: Failed To Yield Right Of Way - 6 accidents</div>`)[0];
+                popup_3f953b0916a9b1f5b8c29cde885bde0c.setContent(html_ff4fb58ceb840be0980a05d51adfb94c);
+            
+        
+
+        marker_3182afe064b46fee7d353a0a5d27c3b9.bindPopup(popup_3f953b0916a9b1f5b8c29cde885bde0c)
+        ;
+
+        
+    
+    
+            var marker_baf28aeffebcbc96d18f28ccdda8d774 = L.marker(
+                [33.42547, -111.94429],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_b230304eca6ebcab2bc8aea7e0cad761 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_baf28aeffebcbc96d18f28ccdda8d774.setIcon(icon_b230304eca6ebcab2bc8aea7e0cad761);
+        
+    
+        var popup_d2f51a9f86e9c6c3f1e4b9d664a657fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b1f7f2dc68024b899f9d18c5b8afc9b = $(`<div id="html_7b1f7f2dc68024b899f9d18c5b8afc9b" style="width: 100.0%; height: 100.0%;">5th St / Farmer Ave - Violation: Failed To Yield Right Of Way - 6 accidents</div>`)[0];
+                popup_d2f51a9f86e9c6c3f1e4b9d664a657fa.setContent(html_7b1f7f2dc68024b899f9d18c5b8afc9b);
+            
+        
+
+        marker_baf28aeffebcbc96d18f28ccdda8d774.bindPopup(popup_d2f51a9f86e9c6c3f1e4b9d664a657fa)
+        ;
+
+        
+    
+    
+            var marker_8e855d3ce323f6d4243405c926ff835b = L.marker(
+                [33.37824425, -111.9611298],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_9a75560a8851672c72e8c7b7501d3702 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8e855d3ce323f6d4243405c926ff835b.setIcon(icon_9a75560a8851672c72e8c7b7501d3702);
+        
+    
+        var popup_70312d133d344086361495032629599b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa7cb487ef7166b32c1f1fc774b01e84 = $(`<div id="html_fa7cb487ef7166b32c1f1fc774b01e84" style="width: 100.0%; height: 100.0%;">Baseline Rd / Darrow Dr - Violation: Failed To Yield Right Of Way - 6 accidents</div>`)[0];
+                popup_70312d133d344086361495032629599b.setContent(html_fa7cb487ef7166b32c1f1fc774b01e84);
+            
+        
+
+        marker_8e855d3ce323f6d4243405c926ff835b.bindPopup(popup_70312d133d344086361495032629599b)
+        ;
+
+        
+    
+    
+            var marker_e3051a86c6e27402f47de5d194a26a3f = L.marker(
+                [33.41684, -111.9263],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_ec8b120d317073c51bc6bdbdeb2a0d2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e3051a86c6e27402f47de5d194a26a3f.setIcon(icon_ec8b120d317073c51bc6bdbdeb2a0d2e);
+        
+    
+        var popup_571db3c35a1f18db37e5ae67b1987e15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b6cee3f45e6710a23b116945b2ec07e = $(`<div id="html_7b6cee3f45e6710a23b116945b2ec07e" style="width: 100.0%; height: 100.0%;">Rural Rd / Lemon St - Violation: Failed To Yield Right Of Way - 6 accidents</div>`)[0];
+                popup_571db3c35a1f18db37e5ae67b1987e15.setContent(html_7b6cee3f45e6710a23b116945b2ec07e);
+            
+        
+
+        marker_e3051a86c6e27402f47de5d194a26a3f.bindPopup(popup_571db3c35a1f18db37e5ae67b1987e15)
+        ;
+
+        
+    
+    
+            var marker_1d3b93587bf8a1a7cb90c381b35a99e0 = L.marker(
+                [33.40845, -111.9736],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_0e0e71388da94858b156dbbd21db417b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1d3b93587bf8a1a7cb90c381b35a99e0.setIcon(icon_0e0e71388da94858b156dbbd21db417b);
+        
+    
+        var popup_148fb7df6699be2cf329c26e728564c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea23e8c697657e1f6118a0a3d3c888cc = $(`<div id="html_ea23e8c697657e1f6118a0a3d3c888cc" style="width: 100.0%; height: 100.0%;">Broadway Rd / I-10 Exit 153 G-Ramp - Violation: Failed To Yield Right Of Way - 6 accidents</div>`)[0];
+                popup_148fb7df6699be2cf329c26e728564c1.setContent(html_ea23e8c697657e1f6118a0a3d3c888cc);
+            
+        
+
+        marker_1d3b93587bf8a1a7cb90c381b35a99e0.bindPopup(popup_148fb7df6699be2cf329c26e728564c1)
+        ;
+
+        
+    
+    
+            var marker_48fe5af2df66a86b0f9b83c8252ef43f = L.marker(
+                [33.42194304, -111.9695686],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_012effbda33026eee8fac22563673c1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_48fe5af2df66a86b0f9b83c8252ef43f.setIcon(icon_012effbda33026eee8fac22563673c1b);
+        
+    
+        var popup_6cef1f794eb38c572c938e238e3c66e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73557fc7ab6f3ee861ff8b23daf1a185 = $(`<div id="html_73557fc7ab6f3ee861ff8b23daf1a185" style="width: 100.0%; height: 100.0%;">University Dr / 52nd St - Violation: Failed To Yield Right Of Way - 5 accidents</div>`)[0];
+                popup_6cef1f794eb38c572c938e238e3c66e7.setContent(html_73557fc7ab6f3ee861ff8b23daf1a185);
+            
+        
+
+        marker_48fe5af2df66a86b0f9b83c8252ef43f.bindPopup(popup_6cef1f794eb38c572c938e238e3c66e7)
+        ;
+
+        
+    
+    
+            var marker_c9714979c4ecad4aca96b82acef2210e = L.marker(
+                [33.40750558, -111.917697],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_302c88752be5df0eca13bd3675efd380 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c9714979c4ecad4aca96b82acef2210e.setIcon(icon_302c88752be5df0eca13bd3675efd380);
+        
+    
+        var popup_6e0b2d449f4055ecc5aa02ba9dfb35cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62a2d5ae32b7106b28f37e0a14a86c49 = $(`<div id="html_62a2d5ae32b7106b28f37e0a14a86c49" style="width: 100.0%; height: 100.0%;">Broadway Rd / Dorsey Ln - Violation: Failed To Yield Right Of Way - 5 accidents</div>`)[0];
+                popup_6e0b2d449f4055ecc5aa02ba9dfb35cf.setContent(html_62a2d5ae32b7106b28f37e0a14a86c49);
+            
+        
+
+        marker_c9714979c4ecad4aca96b82acef2210e.bindPopup(popup_6e0b2d449f4055ecc5aa02ba9dfb35cf)
+        ;
+
+        
+    
+    
+            var marker_3ebd6696e761b829d86362700ddbab30 = L.marker(
+                [33.4075064, -111.913246],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_0f9e766bf1bab1c06139d2cea49c0c11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3ebd6696e761b829d86362700ddbab30.setIcon(icon_0f9e766bf1bab1c06139d2cea49c0c11);
+        
+    
+        var popup_b0bfbaddaab80b04d303c60e056b7807 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc5521f0ad2bc817feed0605ce575a9d = $(`<div id="html_dc5521f0ad2bc817feed0605ce575a9d" style="width: 100.0%; height: 100.0%;">Broadway Rd / Elm St - Violation: Failed To Yield Right Of Way - 5 accidents</div>`)[0];
+                popup_b0bfbaddaab80b04d303c60e056b7807.setContent(html_dc5521f0ad2bc817feed0605ce575a9d);
+            
+        
+
+        marker_3ebd6696e761b829d86362700ddbab30.bindPopup(popup_b0bfbaddaab80b04d303c60e056b7807)
+        ;
+
+        
+    
+    
+            var marker_f83061e63b408cdc6308d25dcdcb9344 = L.marker(
+                [33.42928299, -111.9004564],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_e169bf3ed397a2076f6a2f534b103fec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f83061e63b408cdc6308d25dcdcb9344.setIcon(icon_e169bf3ed397a2076f6a2f534b103fec);
+        
+    
+        var popup_17e25f858f7879e03daee6688df05d24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0327963eb264aba25d3ce397e89c1ba0 = $(`<div id="html_0327963eb264aba25d3ce397e89c1ba0" style="width: 100.0%; height: 100.0%;">Rio Salado Pkwy / Smith Rd - Violation: Disregarded Traffic Signal - 5 accidents</div>`)[0];
+                popup_17e25f858f7879e03daee6688df05d24.setContent(html_0327963eb264aba25d3ce397e89c1ba0);
+            
+        
+
+        marker_f83061e63b408cdc6308d25dcdcb9344.bindPopup(popup_17e25f858f7879e03daee6688df05d24)
+        ;
+
+        
+    
+    
+            var marker_37dfcef9aa1f02f5e04d11df662c3acc = L.marker(
+                [33.34913, -111.91119],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_03929ef017d011e3a393edd4d2999dd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_37dfcef9aa1f02f5e04d11df662c3acc.setIcon(icon_03929ef017d011e3a393edd4d2999dd6);
+        
+    
+        var popup_cf3889ae9534419c28e28bc18a3f2b09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b66b2c124f057c2e78fcbf9af2c31cc5 = $(`<div id="html_b66b2c124f057c2e78fcbf9af2c31cc5" style="width: 100.0%; height: 100.0%;">McClintock Dr / Elliot Rd - Violation: Failed To Yield Right Of Way - 5 accidents</div>`)[0];
+                popup_cf3889ae9534419c28e28bc18a3f2b09.setContent(html_b66b2c124f057c2e78fcbf9af2c31cc5);
+            
+        
+
+        marker_37dfcef9aa1f02f5e04d11df662c3acc.bindPopup(popup_cf3889ae9534419c28e28bc18a3f2b09)
+        ;
+
+        
+    
+    
+            var marker_3761eeb958ec195450884eaca76692ba = L.marker(
+                [33.34934, -111.89437],
+                {}
+            ).addTo(map_5c97995c0a7cec311e7f51203d86dc19);
+        
+    
+            var icon_32ad050b3413b02c25f6d5e045431128 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3761eeb958ec195450884eaca76692ba.setIcon(icon_32ad050b3413b02c25f6d5e045431128);
+        
+    
+        var popup_0953be69c7c260856fdad4771f0e4724 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af74383c8a31aff7492ebda0f3f38b6a = $(`<div id="html_af74383c8a31aff7492ebda0f3f38b6a" style="width: 100.0%; height: 100.0%;">Price Rd / Elliot Rd - Violation: Disregarded Traffic Signal - 5 accidents</div>`)[0];
+                popup_0953be69c7c260856fdad4771f0e4724.setContent(html_af74383c8a31aff7492ebda0f3f38b6a);
+            
+        
+
+        marker_3761eeb958ec195450884eaca76692ba.bindPopup(popup_0953be69c7c260856fdad4771f0e4724)
+        ;
+
+        
+    
+</script>
+</html>
